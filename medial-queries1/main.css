@@ -7,27 +7,30 @@ body {
   background: lightgray;
   text-align: center;
   font-size: 2em;
-  margin: 10px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  justify-content: space-around;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .a {
   flex-grow: .5;
+  margin: .5em;
 }
 
 .b {
   flex-grow: 2.5;
   min-height: 65vh;
+  margin: .5em;
 }
 
 .c {
   flex-grow: .5;
+  margin: .5em;
 }
 
 @media (min-width: 600px) {
@@ -42,6 +45,10 @@ body {
   }
 
   .b {
-    width: 80vw;
+    width: 60vw;
+  }
+
+  .c {
+    width: 15vw;
   }
 }
