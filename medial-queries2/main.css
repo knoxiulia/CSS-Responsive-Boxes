@@ -12,15 +12,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  box-sizing: border-box;
+  justify-content: space-between;
   min-height: 100vh;
 }
 
 
-header, footer {
+header, footer, .flex {
   flex-grow: 1;
-  margin: .5em;
+  margin: 1em;
 }
 
 main {
@@ -28,30 +27,21 @@ main {
   min-height: 65vh;
 }
 
-.c{
+.c, .d, .e {
   flex-grow: 4;
+  margin: .5em;
 }
-
-.d {
-  flex-grow: 4;
-}
-
-.e {
-  flex-grow: 4;
-} 
 
 aside {
-  justify-content: space-around;
-  flex-grow: 2;
-  margin: .5em;
+  display: flex;
+  justify-content: space-between;
+  min-height: 20vh;
 }
 
-
 footer {
-  flex-grow: 1;
+  flex-grow: 5;
   flex-direction: row;
-  margin: .5em;
-  min-height: 15vw;
+  min-height: 100vh;
 }
 
 @media (min-width: 600px) {
