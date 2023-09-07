@@ -23,17 +23,13 @@ header {
 
 .flex-1 {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 85vh;
+  max-height: 85vh;
 }
 
 aside {
+  width: 70%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
 }
 
 main {
